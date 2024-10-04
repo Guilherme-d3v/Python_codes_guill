@@ -5,4 +5,5 @@ guidao= aro/2
 manet=aro/4
 quadro = aro
 #devolvendo ao usuario as dimensoes calculadas
-print (f"Com base no Aro informado\n O tamanho ideal de guidao é {guidao}\n O tamanho ideal de manet é {manet}\n O tamanho ideal de quadro é {quadro}")
+#print (f"Com base no Aro informado\n O tamanho ideal de guidao é {guidao}\n O tamanho ideal de manet é {manet}\n O tamanho ideal de quadro é {quadro}")
+print("como base no Aro informado\n o tamanho ideal de guidao é {}\n o tamnho ideal de manet é {}\n o tamanho idedal de quado é {}".format(guidao,manet,aro))
