@@ -1,0 +1,11 @@
+numero = int (input("Digite um número "))
+
+if numero % 3 == 0 :
+    print (" O numero é divisil por 3")
+elif numero % 3 != 0 :
+     print ("o numero nao é divisivel por 3")
+
+if numero % 5 == 0 :
+    print (" o numero é divisivel por 5")
+else:
+    print ("O numero nao é divisivel  por 5")
