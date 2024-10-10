@@ -15,12 +15,12 @@ contadororganico = 0
 contadornao_reciclavel = 0
 decisao = "sim"
 
-while (decisao =="sim"):
+while (decisao == "sim" ):
 
     material = int(input("Diga qual categoria de material deseja inserir\n1- papel\n2- plastico\n3- vidro\n4- metal\n5- organico\n6- nao reciclavel  ")) #recebendo material 
     if (material ==1 ): #se adicioonar papel 
         contadorpapel +=1
-        decisao = (input("prosseguir com  reciclagem, sim ou nao ?")).lower
+        decisao = str(input("prosseguir com  reciclagem, sim ou nao ? ")).lower
 
     elif (material ==2 ): #se adicioonar plastico   
         contadorplastico +=1
@@ -41,6 +41,7 @@ while (decisao =="sim"):
     elif (material ==6 ): #se adicioonar nao reciclavel  
         contadornao_reciclavel +=1
         decisao = (input("prosseguir com  reciclagem, sim ou nao ?")).lower
-
+    else:
+        print("Erro tente novamente")
 
 print(f"Voce adicionou\npapel- cor de lixeira {papel} / contagem de elementos {contadorpapel}\nplastico- cor de lixeira {plastico} / contagem de elementos {contadorplastico}\nvidro- cor de lixeira {vidro} / contagem de elementos {contadorvidro}\nmetal- cor de lixeira {metal} / contagem de elementos {contadormetal}\norganico- cor de lixeira {organico} / contagem de elementos {contadororganico}\nnao reciclaveis- cor de lixeira {nao_reciclavel} / contagem de elementos {contadornao_reciclavel}\n")   
