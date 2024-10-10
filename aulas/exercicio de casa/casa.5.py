@@ -13,35 +13,34 @@ contadorvidro = 0
 contadormetal = 0
 contadororganico = 0
 contadornao_reciclavel = 0
-decisao = "sim"
+decisao = 1
 
-while (decisao == "sim" ):
-
-    material = int(input("Diga qual categoria de material deseja inserir\n1- papel\n2- plastico\n3- vidro\n4- metal\n5- organico\n6- nao reciclavel  ")) #recebendo material 
+while decisao == 1:
+    material = int(input("Diga qual categoria de material deseja inserir\n1- papel\n2- plastico\n3- vidro\n4- metal\n5- organico\n6- nao reciclavel  ")) #recebendo material
     if (material ==1 ): #se adicioonar papel 
         contadorpapel +=1
-        decisao = str(input("prosseguir com  reciclagem, sim ou nao ? ")).lower
+        decisao = int(input("prosseguir com  reciclagem, 1-sim ou 2-nao ?"))
 
     elif (material ==2 ): #se adicioonar plastico   
         contadorplastico +=1
-        decisao = (input("prosseguir com  reciclagem, sim ou nao ?")).lower
+        decisao = int(input("prosseguir com  reciclagem, 1-sim ou 2-nao ?"))
 
     elif (material == 3): #se adicioonar vidro    
         contadorvidro +=1
-        decisao = (input("prosseguir com  reciclagem, sim ou nao ?")).lower
+        decisao = int(input("prosseguir com  reciclagem, 1-sim ou 2-nao ?"))
 
     elif (material ==4 ): #se adicioonar metal    
         contadormetal +=1
-        decisao = (input("prosseguir com  reciclagem, sim ou nao ?")).lower
+        decisao = int(input("prosseguir com  reciclagem, 1-sim ou 2-nao ?"))
 
     elif (material ==5): #se adicioonar organico  
         contadororganico +=1
-        decisao = (input("prosseguir com  reciclagem, sim ou nao ?")).lower
+        decisao = int(input("prosseguir com  reciclagem, 1-sim ou 2-nao ?"))
 
     elif (material ==6 ): #se adicioonar nao reciclavel  
         contadornao_reciclavel +=1
-        decisao = (input("prosseguir com  reciclagem, sim ou nao ?")).lower
+        decisao = int(input("prosseguir com  reciclagem, 1-sim ou 2-nao ?"))
     else:
         print("Erro tente novamente")
-
-print(f"Voce adicionou\npapel- cor de lixeira {papel} / contagem de elementos {contadorpapel}\nplastico- cor de lixeira {plastico} / contagem de elementos {contadorplastico}\nvidro- cor de lixeira {vidro} / contagem de elementos {contadorvidro}\nmetal- cor de lixeira {metal} / contagem de elementos {contadormetal}\norganico- cor de lixeira {organico} / contagem de elementos {contadororganico}\nnao reciclaveis- cor de lixeira {nao_reciclavel} / contagem de elementos {contadornao_reciclavel}\n")   
+else:
+    print(f"Voce adicionou\npapel- cor de lixeira {papel} / contagem de elementos {contadorpapel}\nplastico- cor de lixeira {plastico} / contagem de elementos {contadorplastico}\nvidro- cor de lixeira {vidro} / contagem de elementos {contadorvidro}\nmetal- cor de lixeira {metal} / contagem de elementos {contadormetal}\norganico- cor de lixeira {organico} / contagem de elementos {contadororganico}\nnao reciclaveis- cor de lixeira {nao_reciclavel} / contagem de elementos {contadornao_reciclavel}\n")   
