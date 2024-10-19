@@ -13,5 +13,6 @@ print("para baixo")
 print("para frente")
 for i in range(3):
     print("para baixo")
-for i in range(2):
-    print("para tras")
+print("para tras")
+print("abrir")
+print("para tras")

@@ -4,4 +4,4 @@ for i in range(5,101,5):
         print(i)
     elif i%2!=0:
         x+=i
-print(f"a soma dos impares é {x}")  
+print(f"a soma dos impares é {x}") 
