@@ -13,7 +13,10 @@ def subtrair(x,y):
 def potenciar(x,y):
     return pow(x,y)
 
-op=str(input('diga-nos qual operaçao gostaria de efeutar ? multiplicar/dividir/somar/subtrair/potenciar >>>> '))
+def divisaoint(x,y):
+    return x//y
+
+op=str(input('diga-nos qual operaçao gostaria de efeutar ? multiplicar/dividir/somar/subtrair/potenciar/divisaointeira >>>> '))
 n1=float(input('Qual o primeiro termo ? >>>> '))
 n2=float(input("Qual o segundo termo ? >>>> "))
 if op == 'potenciar':
@@ -34,6 +37,9 @@ elif op == 'dividir':
 
 elif op == 'multiplicar':
     produto=multiplicar(n1,n2)
+    print(produto)
+elif op == 'divisaointeira':
+    produto=divisaoint(n1,n2)
     print(produto)
 else:
     print("Error")
