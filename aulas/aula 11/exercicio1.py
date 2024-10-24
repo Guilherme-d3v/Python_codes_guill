@@ -1,7 +1,6 @@
 import random
 mochila =['espada','escudo','poçao']
-tem_arco = 'arco' in mochila
-tem_espada = "espada" in mochila
+
 escolha=str(input("Ao longo da estrada voce acaba de encotrar um Arco, gostaria de adicionalo ao inventario ? sim ou não ? "))
 if (escolha) == "sim" :
     print("sua mochila só possui 3 slots, para pegar o arco voce precisa escolher um item para descartar ",mochila)
@@ -15,7 +14,7 @@ else:
 print('Ao prosseguir seu caminho voce se deparou com um bandido armado que exige suas poçoes voce tem sua opçao de lutar ou entregar o que ele quer')
 decisao=int(input("1-sacar a arma e lutar\n2-luta corporal\n3-entregar\n"))
 if decisao == 1:
-    if tem_arco or tem_espada in mochila :
+    if 'espada' in mochila :
         print("Voce defendeu sua honra e seus pertences desse marginal")
     else:
         print("voce lutou sem armas e tomou fumo, FIM DE JOGO ")

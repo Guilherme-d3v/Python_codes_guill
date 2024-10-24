@@ -7,7 +7,6 @@ if decisao == 1:
         print("Voce defendeu sua honra e seus pertences desse marginal")
     else:
         print("voce lutou sem armas e tomou fumo, FIM DE JOGO ")
-
 elif decisao==2:
     print("voce lutou bravamente mas de forma burra ele estava armado e te matou, FIM DE JOGO ")
 elif decisao==3:
@@ -17,4 +16,4 @@ elif decisao==3:
     else:
         print("o bandido se irritou com a sua mentira e te matou, FIM DE JOGO")
 else:
-    print("o bandido se aproveitou de sua destraçao e te atacou, FIM DE JOGO")
+    print("o bandido se aproveitou de sua distraçao e te atacou, FIM DE JOGO")
